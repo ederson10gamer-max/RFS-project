@@ -28,6 +28,19 @@ header {
     top: 0;
     z-index: 100;
 }
+.logo{
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #0044cc;
+    margin: 0;
+}
+.logoBanner{
+      width: 50px;
+  height: 50px;
+  border-radius: 50%;   /* Apenas suaviza as pontas do quadrado */
+  object-fit: cover;
+}
 
 .barLogo h1 {
     font-size: 1.8rem;
