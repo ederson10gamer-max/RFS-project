@@ -17,7 +17,7 @@ body {
 
 /* ===== PARTE 1: HEADER ===== */
 header {
-    background: #197adb;
+    background: #000000;
     color: #fff;
     display: flex;
     justify-content: space-between;
@@ -143,7 +143,7 @@ hr {
 
 /* --- BOTÃO --- */
 .Btn-contato-azul {
-    background: #197adb;
+    background: #0A63BD;
     color: #fff;
     border: none;
     padding: 12px 28px;
@@ -156,7 +156,7 @@ hr {
 }
 
 .Btn-contato-azul:hover {
-    background: #3aec55;
+    background: #0BCE66;
     color: #2c3e50;
     transform: translateY(-2px);
 }
