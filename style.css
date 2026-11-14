@@ -1,10 +1,13 @@
 /* ===== RESET ===== */
-* {
-    padding: 0;
+* { 
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
+    /* outline: 1px solid red; */
 }
-
+html {
+    scroll-behavior: smooth;
+}
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
@@ -14,7 +17,6 @@ body {
     flex-direction: column;
     min-height: 100vh;
 }
-
 /* ===== PARTE 1: HEADER ===== */
 header {
     background: #000000;
@@ -29,21 +31,22 @@ header {
     z-index: 100;
 }
 .logo{
-    font-size: 1.5rem;
+    font-size: 0.5rem;
     font-weight: bold;
     text-transform: uppercase;
-    color: #0044cc;
+   color: #bdc3c7;
+    /* color: #0044cc;  */
     margin: 0;
 }
 .logoBanner{
-      width: 50px;
-  height: 50px;
-  border-radius: 50%;   /* Apenas suaviza as pontas do quadrado */
-  object-fit: cover;
+     width: 30%;
+     height: 30%;
+     border-radius: 0;   /* Apenas suaviza as pontas do quadrado */
+     object-fit: cover;
 }
 
 .barLogo h1 {
-    font-size: 1.8rem;
+    font-size: 0.9rem;
     font-weight: 600;
     letter-spacing: 1px;
     color: #ecf0f1;
@@ -85,7 +88,7 @@ main {
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
-    padding: 40px 20px;
+    padding: 30px 20px;
 }
 
 section {
@@ -108,11 +111,14 @@ hr {
 .hero {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 40px;
-    flex-wrap: wrap;
-}
-
+    min-height: 450px;
+    padding: 60px 40px;
+    border-radius: 12px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('image_resources/rfsBanner.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}   
 .hero-texto {
     flex: 1;
     min-width: 300px;
@@ -120,25 +126,13 @@ hr {
 
 .hero-texto h2 {
     font-size: 2.2rem;
-    color: #2c3e50;
+    color: #d7e2ed;
     margin-bottom: 15px;
 }
 
 .hero-texto p {
     margin-bottom: 15px;
-    color: #555;
-}
-
-.hero-imagem {
-    flex: 1;
-    min-width: 300px;
-    text-align: center;
-}
-
-.hero-imagem img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 12px;
+    color: #d7e2ed;
 }
 
 /* --- BOTÃO --- */
@@ -217,7 +211,7 @@ hr {
 
 .passo img {
     width: 100%;
-    height: 160px;
+    height: auto;
     object-fit: cover;
     border-radius: 10px;
     margin-bottom: 10px;
@@ -227,7 +221,7 @@ hr {
 /* --- SOBRE --- */
 .sobre-conteudo {
     display: flex;
-    gap: 30px;
+    /* gap: 30px; */
     align-items: center;
     flex-wrap: wrap;
 }
@@ -239,6 +233,7 @@ hr {
 
 .sobre-conteudo img {
     flex: 1;
+    width: 100%;
     min-width: 280px;
     max-width: 500px;
     border-radius: 10px;
@@ -279,7 +274,7 @@ footer p {
 @media (max-width: 768px) {
     header {
         flex-direction: column;
-        padding: 10px 20px;
+        padding: 60px 20px;
     }
 
     .navbar ul {
