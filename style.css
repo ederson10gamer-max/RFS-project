@@ -100,7 +100,21 @@ section h2 {
     color: #2c3e50;
     margin-bottom: 20px;
 }
-
+.google-colorido {
+  font-weight: 700;
+  background: linear-gradient(
+    to right,
+    #4285F4 0% 22%,   /* G - Azul */
+    #EA4335 22% 40%,  /* o - Vermelho */
+    #FBBC05 40% 58%,  /*o - amarelo */
+    #4285F4 58% 78%,  /* g - Azul */
+    #34A853 78% 85%,  /* l - Verde */
+    #EA4335 85% 100%  /* e - Vermelho */
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
 hr {
     border: none;
     border-top: 1px solid #e0e0e0;
@@ -140,7 +154,7 @@ hr {
     background: #0A63BD;
     color: #fff;
     border: none;
-    padding: 12px 28px;
+    padding: 10px 16px 10px 16px;
     font-size: 1rem;
     font-weight: 600;
     border-radius: 6px;
@@ -151,8 +165,8 @@ hr {
 
 .Btn-contato-azul:hover {
     background: #0BCE66;
-    color: #2c3e50;
-    transform: translateY(-2px);
+    color: #ecf1f6;
+    transform: translateY(-10px);
 }
 
 /* --- CARDS DE SERVIÇOS --- */
