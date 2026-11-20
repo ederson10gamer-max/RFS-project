@@ -151,6 +151,10 @@ hr {
 
 /* --- BOTÃO --- */
 .Btn-contato-azul {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1px;
     background: #0A63BD;
     color: #fff;
     border: none;
